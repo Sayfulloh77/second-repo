@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.box {
+    width: 300px;
+    height: 300px;
+    background: seagreen;
+    transition:  transform 0.3s ease;
+    cursor: pointer;
+    margin: 100px auto;
+   /* transform: translate(100px, 200px);*//* 100px tepadan 200px chap dan surilyapti*/
+/*    transform: rotate(45deg);*/
+    /* transform = translate Y, X elementlarni kochiradi*/
+   /* transform: rotate(45deg);/* yani rotate 45 gradusga burib qoydi*/
+}
+.box:hover {
+    width: 300px;
+    height: 300px;
+    background: seagreen;
+    transform: skew(10deg,-10deg);/*1 chisi x boyicha 2 chisi Y yani igrik boyicha x yonlamachasi y yani igrik tepa pasdan*/
+    transform-origin: left bottom;/* qayerda qayrilshini yoki tranfrom ishlashi kerakligini aytadi, belgilaydi*/
+   //* transform: scale(0.5);/* scale(0.5) yaqinlashtiradi, scale 1 default payti scale 2 . 2 baravar kotalashtirish*/
+   /* transform: rotate(45deg);*/
+   /* transform: translate(100px,60px);*/
+}
+img {
+    transform: translate(100px, 250px);
+   width: 400px;
+   height: 200px;
+   object-fit: cover;
+   object-position: left;
+   filter: contrast(1);
+   background: black;
+   display: block;
+   /*visibility: hidden;/* visibility  */
+  /* clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 20% 100%);*/
+   /*clip-path maker in this site you can make any shape how you want*/
+}

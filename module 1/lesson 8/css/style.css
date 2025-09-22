@@ -1,0 +1,53 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  /*  background-image: linear-gradient(-20deg, red 20%, green, yellow, blue, violet); /* linear-gradient- on the left or right, radius-gradient-circle*/
+/*background-image: radial-gradient(circle, red, green, yellow, blue, violet);*/
+   background-image: url("https://picsum.photos/1200/800");
+    background-repeat: repeat; /* repeat-x, repeat-y, no-repeat */
+    background-size: cover; /* contain - cover the entire container */
+    background-position: center ;/* there are many options for position like top left, bottom right etc and also in px and % */
+    width: 100%;
+    height: 100vh; /* vh - viewport height */
+}
+ nav {
+    height: 60px;
+    background: teal;
+    display: flex;
+    padding-top: 20px;
+}
+  .nav-ul {
+   display: flex;
+   list-style: none;
+   width: 50%;
+   justify-content: space-evenly;
+}
+  .nav-li {
+   color: white;
+   transition: 0.3s;
+
+}
+ .nav-li:hover {
+    cursor: row-resize;
+    text-decoration: underline;
+    color: rgb(29, 26, 26);
+}
+.box {
+    background-image: url("https://picsum.photos/700/300");
+    background-repeat: no-repeat;
+    background-color: white;
+    width: 300px;
+    height: 420px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+;
+}
+.box h1 {
+    margin-top: 240px;
+    margin-left: 30px;
+}

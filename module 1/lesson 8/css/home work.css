@@ -1,0 +1,74 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(../images/lemons-1296x728-feature.jpg);
+    background-repeat: no-repeat; /* repeat-x, repeat-y, no-repeat */
+    background-size: 100% 50%; /* contain - cover the entire container */
+    height: 200vh;
+    width: 100%;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+nav .nav-ul {
+    color: white;
+    display: flex;
+    list-style: none;
+    width: 80%;
+    gap: 100px;
+    justify-content: flex-end;
+    align-items: baseline;
+    padding-top: 20px;
+    
+}
+nav .login {
+    color: black;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+nav .nav-ul button {
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+section h1 {
+    color: white;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: 150px;
+    font-size: 50px;
+}
+.box {
+    background-color: black;
+    width: 1700px;
+    height: 1000px;
+    margin: 600px auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.box .box1{
+
+}
+
+.box .box2 {
+    background-image: url("../images/de73bd64679593.5ada01b7b7718.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 900px;
+    width: 850px;
+}
+.box .box3 {
+    background-image: url("../images/cocktail-5893924_1280.jpg");
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+}
