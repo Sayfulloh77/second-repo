@@ -5,10 +5,10 @@
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
-}
+}   
 .page-1 {
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     background: rgba(64, 70, 79, 1);
 }
 header {
@@ -133,4 +133,62 @@ header {
 .nav-2 .nav__brand i {
     font-size: 20px;
     color: rgba(255, 255, 255, 1);
+} 
+/*header finished*/
+/*main started*/
+main {
+    width: 95%;
+    margin: 0 auto;
+    height: 770px;
+    display: flex;
+    align-items: center;
+}
+main .section-1 {
+    width: 60%;
+    height: 418px;
+    margin-top: 100px;
+}
+main .section-1 .main-text {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 100px;
+    line-height: 110px;
+    letter-spacing: 0.2px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 30px;
+}
+main .section-1 .mini-text {
+    width: 630px;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 25px;
+}
+main .section-1 .button-1 {
+    width: 230px;
+    height: 73px;
+    border: 1px solid rgba(225, 177, 104, 1);
+    background: rgba(92, 97, 104, 1);
+    color: rgba(225, 177, 104, 1);
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.2px;
+}
+main .aside-1 {
+    width: 40%;
+}
+main .aside-1 .img-2 {
+    background-image: url(../images/da62025672256630bc1a8d2bbf238a9d271a11f1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 595px;
+    height: 740px;
+    border-top-left-radius: 626px;
+    border-top-right-radius: 626px;
+    margin-top: 100px;
 }
