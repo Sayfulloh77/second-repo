@@ -1,0 +1,196 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+@mixin btn ($a,$b,$c) {
+    display: $a;
+    align-items: $b;
+    justify-content: $c;
+}
+
+//variables
+$rgba-color-black:#40464f;
+$rgba-color-yellow:#e1b168;
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}   
+.page-1 {
+    width: 100%;
+    height: 150vh;
+    background: $rgba-color-black;
+}
+header {
+    width: 95%;
+    margin: 0 auto;
+    height: 370px;
+}
+.nav-1 {
+    @include btn(flex, center, space-between);
+    width: 100%;
+    height: 290px;
+}
+.mini-box1 {
+    width: 295px;
+    height: 73px;
+    background: $rgba-color-black;
+    border: 1px solid $rgba-color-yellow;
+    @include btn(flex,center,center);
+}
+.mini-box1 h1 {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.2px;
+    color: rgba(255, 255, 255, 1);
+}
+.nav-1 .img {
+    background-image: url(../images/OIP.webp);
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+}
+.mini-box2 {
+    width: 295px;
+    height: 73px;
+    background: $rgba-color-yellow;
+    border: none;
+    @include btn(flex,center,center);
+}
+.mini-box2 h1 {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.44px;
+    color: $rgba-color-black;
+}
+.nav-2 {
+    display: flex;
+    width: 100%;
+    height: 82px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+.nav-2 .nav__ul {
+    @include btn(flex,center,space-between);
+    padding: 20px;
+    width: 60%;
+    height: 100%;
+}
+.nav-2 .nav__ul .nav__link {
+    list-style: none;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.3px;
+}
+.nav-2 .nav__ul .nav__link a {
+    transition: all 0.3s ease;
+}
+.nav-2 .nav__ul .nav__link a:hover {
+    color: gray;
+}
+.nav-2 .nav__ul .nav__link a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: gray;
+    display: block;
+    transition: all 0.3s ease;
+}
+.nav-2 .nav__ul .nav__link a:hover::after {
+    width: 100%;
+    height: 2px;
+    background: gray;
+    display: block;
+}
+.nav-2 .nav__ul .nav__link:nth-child(1) a:hover::after {
+    width: 100%;
+    height: 2px;
+    background: $rgba-color-yellow;
+    display: block;
+}
+.nav-2 .nav__ul .nav__link a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+}
+.nav-2 .nav__ul .nav__link:nth-child(1) a{
+    color: $rgba-color-yellow;
+}
+.nav-2 .nav__brand {
+    width: 40%;
+    height: 100%;
+    @include btn(flex,center,flex-end);
+    gap: 20px;
+}
+.nav-2 .nav__brand i {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1);
+} 
+/*header finished*/
+/*main started*/
+main {
+    width: 95%;
+    margin: 0 auto;
+    height: 770px;
+    display: flex;
+    align-items: center;
+}
+main .section-1 {
+    width: 60%;
+    height: 418px;
+    margin-top: 100px;
+}
+main .section-1 .main-text {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 100px;
+    line-height: 110px;
+    letter-spacing: 0.2px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 30px;
+}
+main .section-1 .mini-text {
+    width: 630px;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 25px;
+}
+main .section-1 .button-1 {
+    width: 230px;
+    height: 73px;
+    border: 1px solid $rgba-color-yellow;
+    background: #5c6168;
+    color: $rgba-color-yellow;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.2px;
+}
+main .aside-1 {
+    width: 40%;
+}
+main .aside-1 .img-2 {
+    background-image: url(../images/da62025672256630bc1a8d2bbf238a9d271a11f1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 595px;
+    height: 740px;
+    border-top-left-radius: 626px;
+    border-top-right-radius: 626px;
+    margin-top: 100px;
+}
