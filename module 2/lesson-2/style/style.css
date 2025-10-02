@@ -156,6 +156,12 @@ main .section-1 .button-1 {
   color: #e1b168;
   line-height: 33px;
   letter-spacing: 0.2px;
+  cursor: pointer;
+}
+main .section-1 .button-1:hover {
+  border: none;
+  background: #e1b168;
+  color: white;
 }
 
 main .aside-1 {
@@ -185,9 +191,18 @@ main .aside-1 .img-2 {
   height: 73px;
   background: #40464f;
   border: 1px solid #e1b168;
+  cursor: pointer;
+  transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.mini-box1:hover {
+  border: none;
+  background: #e1b168;
+}
+.mini-box1:hover:hover h1 {
+  color: #40464f;
 }
 
 .mini-box1 h1 {
@@ -196,18 +211,27 @@ main .aside-1 .img-2 {
   color: rgb(255, 255, 255);
 }
 
+.mini-box2 h1 {
+  line-height: 33px;
+  letter-spacing: 0.44px;
+  color: #40464f;
+}
+
 .mini-box2 {
   width: 295px;
   height: 73px;
   background: #e1b168;
   border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.mini-box2 h1 {
-  line-height: 33px;
-  letter-spacing: 0.44px;
-  color: #40464f;
+.mini-box2:hover {
+  background: #40464f;
+  border: 1px solid #e1b168;
+}
+.mini-box2:hover:hover h1 {
+  color: #e1b168;
 }/*# sourceMappingURL=style.css.map */

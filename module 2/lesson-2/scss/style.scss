@@ -12,24 +12,51 @@
     height: 73px;
     background: $rgba-color-black;
     border: 1px solid $rgba-color-yellow;
+    cursor: pointer;
+    transition: all 0.3s ease;
     @include btn(flex,center,center);
+
+    &:hover {
+    border: none;
+    background: $rgba-color-yellow;
+
+    &:hover h1 {
+        color: $rgba-color-black
+    }
+    }
 }
+
 .mini-box1 h1 {
     @extend %font-weight-font-style-font-size;
     line-height: 33px;
     letter-spacing: 0.2px;
     color: rgba(255, 255, 255, 1);
 }
-.mini-box2 {
-    width: 295px;
-    height: 73px;
-    background: $rgba-color-yellow;
-    border: none;
-    @include btn(flex,center,center);
-}
+
 .mini-box2 h1 {
     @extend %font-weight-font-style-font-size;
     line-height: 33px;
     letter-spacing: 0.44px;
     color: $rgba-color-black;
+
+}
+
+.mini-box2 {
+    width: 295px;
+    height: 73px;
+    background: $rgba-color-yellow;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    @include btn(flex,center,center);
+    
+    &:hover {
+      background: $rgba-color-black;
+      border: 1px solid $rgba-color-yellow;
+
+      &:hover h1 {
+        color: $rgba-color-yellow;
+      }
+    }
+  
 }
