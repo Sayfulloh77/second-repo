@@ -1,0 +1,10 @@
+@mixin btn ($a,$b,$c) {
+    display: $a;
+    align-items: $b;
+    justify-content: $c;
+}
+@mixin fonts ($a,$b,$c) {
+    font-weight: $a;
+    font-style: $b;
+    font-size: $c;
+}

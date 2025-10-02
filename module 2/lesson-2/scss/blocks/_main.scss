@@ -1,0 +1,50 @@
+main {
+    width: 95%;
+    margin: 0 auto;
+    height: 770px;
+    display: flex;
+    align-items: center;
+}
+main .section-1 {
+    width: 60%;
+    height: 418px;
+    margin-top: 100px;
+}
+main .section-1 .main-text {
+    @include fonts (400,Regular,100px);
+    line-height: 110px;
+    letter-spacing: 0.2px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 30px;
+}
+main .section-1 .mini-text {
+    width: 630px;
+    @include fonts (400,Regular,20px);
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 25px;
+}
+main .section-1 .button-1 {
+    width: 230px;
+    height: 73px;
+    border: 1px solid $rgba-color-yellow;
+    background: #5c6168;
+    color: $rgba-color-yellow;
+    @extend %font-weight-font-style-font-size;
+    line-height: 33px;
+    letter-spacing: 0.2px;
+}
+main .aside-1 {
+    width: 40%;
+}
+main .aside-1 .img-2 {
+    background-image: url(../images/da62025672256630bc1a8d2bbf238a9d271a11f1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 595px;
+    height: 740px;
+    border-top-left-radius: 626px;
+    border-top-right-radius: 626px;
+    margin-top: 100px;
+}

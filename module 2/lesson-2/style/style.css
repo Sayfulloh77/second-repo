@@ -1,11 +1,7 @@
-* {
-  padding: 0%;
-  margin: 0%;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
+.mini-box2 h1, .mini-box1 h1, main .section-1 .button-1 {
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 22px;
 }
 
 .page-1 {
@@ -28,25 +24,6 @@ header {
   height: 290px;
 }
 
-.mini-box1 {
-  width: 295px;
-  height: 73px;
-  background: #40464f;
-  border: 1px solid #e1b168;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.mini-box1 h1 {
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 22px;
-  line-height: 33px;
-  letter-spacing: 0.2px;
-  color: rgb(255, 255, 255);
-}
-
 .nav-1 .img {
   background-image: url(../images/OIP.webp);
   background-size: cover;
@@ -54,25 +31,6 @@ header {
   background-repeat: no-repeat;
   height: 200px;
   width: 200px;
-}
-
-.mini-box2 {
-  width: 295px;
-  height: 73px;
-  background: #e1b168;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.mini-box2 h1 {
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 22px;
-  line-height: 33px;
-  letter-spacing: 0.44px;
-  color: #40464f;
 }
 
 .nav-2 {
@@ -155,8 +113,6 @@ header {
   color: rgb(255, 255, 255);
 }
 
-/*header finished*/
-/*main started*/
 main {
   width: 95%;
   margin: 0 auto;
@@ -198,9 +154,6 @@ main .section-1 .button-1 {
   border: 1px solid #e1b168;
   background: #5c6168;
   color: #e1b168;
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 22px;
   line-height: 33px;
   letter-spacing: 0.2px;
 }
@@ -218,4 +171,43 @@ main .aside-1 .img-2 {
   border-top-left-radius: 626px;
   border-top-right-radius: 626px;
   margin-top: 100px;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mini-box1 {
+  width: 295px;
+  height: 73px;
+  background: #40464f;
+  border: 1px solid #e1b168;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mini-box1 h1 {
+  line-height: 33px;
+  letter-spacing: 0.2px;
+  color: rgb(255, 255, 255);
+}
+
+.mini-box2 {
+  width: 295px;
+  height: 73px;
+  background: #e1b168;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mini-box2 h1 {
+  line-height: 33px;
+  letter-spacing: 0.44px;
+  color: #40464f;
 }/*# sourceMappingURL=style.css.map */
